@@ -17,9 +17,9 @@ function fibonacci(num) {
 }
 app.get("/fib/:num", (req, res) => {
     if (fibonacci(parseInt(req.params.num))) {
-        res.send("This is a Fibonacci number.")
+        res.send("Very good. It is Fibonacci")
     } else {
-        res.send("I can't tell this is not a Fibonacci number.")
+        res.send("I can tell this is not a Fibonacci number.")
     }
 })
 
